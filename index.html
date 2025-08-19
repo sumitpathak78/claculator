@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>claculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN (v6) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-M9yhiUZrHqgKTxNEO7XShL8Asft3C5nDqlJtvpX5ob8a20m7Ov6HRDRDDrg+lUdaOc9p8Z+qX0uI2DBBXbzE2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <!-- Font Awesome (ensure this is on top) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="all">
+
+
+
+        <div class="claculator">
+
+            <div class="display">
+                <input type="text" id="display" placeholder="0">
+            </div>
+
+            <div class="buttons">
+                <div class="row row1">
+                    <button onclick="document.querySelector('#display').value =''">Ac</button>
+                    <button
+                        onclick="document.querySelector('#display').value=document.querySelector('#display').value.toString().slice(0,-1) ">Delete</button>
+                    <button onclick="document.querySelector('#display').value+='.'">.</button>
+                    <button onclick="document.querySelector('#display').value+='/'">/</button>
+                </div>
+                <div class="row row2">
+                    <button onclick="sinf()">Sin</button>
+                    <button onclick="cosf()">Cos</button>
+                    <button onclick="tamf()">Tan</button>
+                    <button onclick="sqrf()">&radic;</button>
+                </div>
+                <div class="row row3">
+                    <button onclick="document.querySelector('#display').value+='9'">9</button>
+                    <button onclick="document.querySelector('#display').value+='8'">8</button>
+                    <button onclick="document.querySelector('#display').value+='7'">7</button>
+                    <button onclick="document.querySelector('#display').value+='*'">*</button>
+                </div>
+                <div class="row row4">
+                    <button onclick="document.querySelector('#display').value+='6'">6</button>
+                    <button onclick="document.querySelector('#display').value+='5'">5</button>
+                    <button onclick="document.querySelector('#display').value+='4'">4</button>
+                    <button onclick="document.querySelector('#display').value+='+'">+</button>
+                </div>
+                <div class="row row5">
+                    <button onclick="document.querySelector('#display').value+='3'">3</button>
+                    <button onclick="document.querySelector('#display').value+='2'">2</button>
+                    <button onclick="document.querySelector('#display').value+='1'">1</button>
+                    <button onclick="document.querySelector('#display').value+='-'">-</button>
+                </div>
+                <div class="row row6">
+                    <button onclick="document.querySelector('#display').value+='0'">0</button>
+                    <button onclick="document.querySelector('#display').value+='00'">00</button>
+                    <button id="equal"
+                        onclick="document.querySelector('#display').value=eval(document.querySelector('#display').value)">=</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- footer -->
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="image/sumit_pathak.webp" alt="Developer Image" />
+        </div>
+
+        <div class="footer-center">
+            <h2>Sumit Pathak</h2>
+            <p>Full Stack Web Developer and AI/ML Engineer.</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sumit_pandit78/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61554482516276" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/sumit-pandit-2b29b7330/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
